@@ -1,0 +1,14 @@
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Styling checkbox */
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+input[type='checkbox']:checked {
+  background-color: green;
+}
