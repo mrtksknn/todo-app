@@ -22,7 +22,7 @@ export const addTodoAsync = createAsyncThunk(
   async (payload) => {
     const response = await fetch(
       // sending request to mockapi
-      'https://61c42343f1af4a0017d99378.mockapi.io/todos',
+      'https://62556c848646add390d6ab23.mockapi.io/todos',
       {
         // set method to post for adding new todo item
         method: 'POST',
@@ -45,7 +45,7 @@ export const toggleCompleteAsync = createAsyncThunk(
   async (payload) => {
     const response = await fetch(
       // sending request to mockapi for specific todo item
-      `https://61c42343f1af4a0017d99378.mockapi.io/todos/${payload.id}`,
+      `https://62556c848646add390d6ab23.mockapi.io/todos/${payload.id}`,
       {
         // to change value of completed of specific item of todo
         method: 'PUT',
@@ -67,7 +67,7 @@ export const updateTodoAsync = createAsyncThunk(
   async (payload) => {
     const response = await fetch(
       // sending request to specific mockapi for todo item
-      `https://61c42343f1af4a0017d99378.mockapi.io/todos/${payload.id}`,
+      `https://62556c848646add390d6ab23.mockapi.io/todos/${payload.id}`,
       {
         method: 'PUT',
         headers: {
@@ -88,7 +88,7 @@ export const deleteTodoAsync = createAsyncThunk(
   async (payload) => {
     const response = await fetch(
       // sendign request to mockapi for specific todo item
-      `https://61c42343f1af4a0017d99378.mockapi.io/todos/${payload.id}`,
+      `https://62556c848646add390d6ab23.mockapi.io/todos/${payload.id}`,
       {
         method: 'DELETE',
       }
